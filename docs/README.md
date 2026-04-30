@@ -2,21 +2,6 @@
 
 Welcome! This directory contains comprehensive instructions for LLMs and development agents working on the Link Shortener application.
 
-## 🚨 CRITICAL: READ /docs INSTRUCTIONS FIRST
-
-**BEFORE GENERATING ANY CODE, YOU MUST:**
-1. **ALWAYS** read the relevant instruction files in `/docs/` directory
-2. **NEVER** assume defaults or skip documentation
-3. **VERIFY** your approach matches documented patterns
-4. Each feature/component type has specific requirements in `/docs/`
-
-Available instruction files:
-- [`docs/05-AUTHENTICATION.md`](docs/05-AUTHENTICATION.md) - Authentication requirements with Clerk
-- [`docs/UI.md`](docs/UI.md) - UI component guidelines (shadcn/ui REQUIRED)
-- Additional domain-specific files may exist - CHECK BEFORE CODING
-
-This is not optional. Failing to read these files will result in non-compliant code.
-
 ## Quick Navigation
 
 ### Getting Started
@@ -27,7 +12,7 @@ This is not optional. Failing to read these files will result in non-compliant c
 
 ### ⚠️ Critical: Next.js 16 Breaking Changes
 This project uses Next.js **16.2.4** which has breaking changes from earlier versions.
-**ALWAYS** refer to the relevant .md file under `/docs` BEFORE generating any code. 
+ALWAYS refer to the relevant .md file under /docs BEFORE generating any code. 
 
 **ALWAYS** check `/node_modules/next/dist/docs/` before implementing Next.js features.
 
@@ -47,7 +32,7 @@ This project uses Next.js **16.2.4** which has breaking changes from earlier ver
 - Leverage TypeScript type inference from schema
 
 ### 🎨 UI Components
-- Refer to [docs/UI.md](docs/UI.md) for detailed UI component guidelines
+- Use shadcn/ui components from `/components/ui/`
 - Style with Tailwind CSS utilities (no custom CSS)
 - Support dark mode with `dark:` prefixes
 
@@ -68,9 +53,6 @@ This project uses Next.js **16.2.4** which has breaking changes from earlier ver
 2. Generate migration: `npm run db:generate`
 3. Push changes: `npm run db:push`
 4. Update TypeScript types automatically (they're inferred from schema)
-
-### Authentication
-Refer to [05-AUTHENTICATION.md](05-AUTHENTICATION.md) for comprehensive authentication guidelines using Clerk.
 
 ### Creating a New Component
 
@@ -132,10 +114,8 @@ npm run db:push      # Apply migrations
 ## Best Practices Summary
 
 ✅ **DO:**
-- **READ `/docs/` INSTRUCTIONS BEFORE GENERATING ANY CODE** ⭐ CRITICAL
 - Use Server Components by default
 - Leverage TypeScript strict mode
-- Check relevant `/docs/` files for feature requirements
 - Check `/node_modules/next/dist/docs/` for Next.js features
 - Verify user ID before database operations
 - Use Drizzle ORM for all database access
@@ -146,7 +126,6 @@ npm run db:push      # Apply migrations
 - Use absolute imports (`@/`)
 
 ❌ **DON'T:**
-- **Generate code without reading `/docs/` instruction files** ⭐ CRITICAL
 - Use `any` type in TypeScript
 - Access database from Client Components
 - Trust user IDs from client without verification
@@ -160,12 +139,10 @@ npm run db:push      # Apply migrations
 
 ## Questions?
 
-**BEFORE doing anything else, refer to the specific instruction files in `/docs/` for detailed information on any topic.**
-
-Each file covers its domain comprehensively with examples and best practices. This is non-negotiable for code generation.
+Refer to the specific instruction files for detailed information on any topic. Each file covers its domain comprehensively with examples and best practices.
 
 ---
 
-**Last Updated**: April 30, 2026  
+**Last Updated**: April 29, 2026  
 **Project**: Link Shortener Application  
 **Version**: 0.1.0
