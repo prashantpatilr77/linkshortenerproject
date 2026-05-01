@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1777654335676,
+      "tag": "0000_black_gargoyle",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1777654471564,
+      "tag": "0001_deep_the_spike",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1777654718578,
+      "tag": "0002_bent_lady_ursula",
+      "breakpoints": true
+    }
+  ]
+}
